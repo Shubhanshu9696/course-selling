@@ -1,0 +1,134 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+}
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(52, 49, 72);
+  width: 100vw;
+}
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+.nav-container{
+  background-color: rgb(29, 28, 70);
+  color: white;
+}
+.navbar{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 100vw;
+}
+/* .filter{
+  
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  max-width: max-content;
+  
+  align-items: center;
+  
+} */
+
+.filter-container{
+  /* height: 5rem; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  
+}
+.filter{
+  height: 5rem;
+  min-width: max-content;
+  display: flex;
+  /* justify-items: center; */
+  justify-content: center;
+  align-items: center;
+  
+}
+.filter-btn{
+  font-size: 1.7rem;
+  margin-left: 2%;
+  margin-top: 2%;
+  color: white;
+  background-color: rgb(52, 49, 72);
+}
+
+.filter-btn:hover{
+  background-color: black;
+  border:1px solid white
+}
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.card{
+  width: 400px;
+  height:max-content;
+  margin: 0.7rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  /* justify-content: center; */
+  box-shadow: rgba(0,0,0,0.7) 0px 5px 8px; 
+  transition: transform .2s;
+  color: aliceblue                                               ;
+
+}
+.image{
+  width: 395px;
+  aspect-ratio: 3.5/2;
+  object-fit: cover ;
+  border-radius: 3px;
+  /* position: relative; */
+}
+.image:hover{
+  width: 420px;
+  height: min-content;
+}
+
+.courseName{
+  text-decoration-color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.like-btn-container{
+  align-self: flex-end;
+}
+.like-button{
+  margin-top: 1px;
+  margin-right: 4px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  
+}
+.like-button :hover{
+  transition: all 0.2s;
+  height: 1.5rem;
+  width:  1.5rem;
+}
